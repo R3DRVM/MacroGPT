@@ -55,7 +55,7 @@ Or use Vercel's nameservers if preferred.
 ## Domain
 
 - Domain: macrogpt.online
-- Support Email: support@macrogpt.app
+- Support Email: support@macrogpt.online
 
 ## Color Scheme
 

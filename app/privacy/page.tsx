@@ -122,7 +122,7 @@ export default function Privacy() {
 
                 <h3>7.3 Deletion</h3>
                 <p>
-                  You can request deletion of your account and associated data by contacting us at support@macrogpt.app. Note that some information may be retained as required by law or for legitimate business purposes.
+                  You can request deletion of your account and associated data by contacting us at support@macrogpt.online. Note that some information may be retained as required by law or for legitimate business purposes.
                 </p>
 
                 <h3>7.4 Opt-Out</h3>
@@ -134,7 +134,7 @@ export default function Privacy() {
               <div className="legal-section">
                 <h2>8. Children's Privacy</h2>
                 <p>
-                  MacroGPT is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately at support@macrogpt.app, and we will delete such information.
+                  MacroGPT is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately at support@macrogpt.online, and we will delete such information.
                 </p>
               </div>
 
@@ -178,7 +178,7 @@ export default function Privacy() {
                   If you have questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at:
                 </p>
                 <p>
-                  <strong>Email:</strong> support@macrogpt.app<br />
+                  <strong>Email:</strong> support@macrogpt.online<br />
                   <strong>Website:</strong> macrogpt.online
                 </p>
               </div>

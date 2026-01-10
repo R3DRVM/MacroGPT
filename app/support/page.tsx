@@ -16,7 +16,7 @@ export default function Support() {
     const { category, subject, message } = formData
     const emailSubject = encodeURIComponent(`[${category}] ${subject}`)
     const emailBody = encodeURIComponent(message)
-    window.location.href = `mailto:support@macrogpt.app?subject=${emailSubject}&body=${emailBody}`
+    window.location.href = `mailto:support@macrogpt.online?subject=${emailSubject}&body=${emailBody}`
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -42,8 +42,8 @@ export default function Support() {
               <div className="support-card">
                 <h2>Quick Contact</h2>
                 <p>Send us an email directly:</p>
-                <a href="mailto:support@macrogpt.app" className="email-link">
-                  support@macrogpt.app
+                <a href="mailto:support@macrogpt.online" className="email-link">
+                  support@macrogpt.online
                 </a>
               </div>
 

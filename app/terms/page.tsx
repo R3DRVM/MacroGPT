@@ -88,7 +88,7 @@ export default function Terms() {
 
                 <h3>4.5 Refunds</h3>
                 <p>
-                  Refund requests are subject to Apple's refund policy. We do not provide direct refunds. If you believe you are entitled to a refund, please contact Apple Support or reach out to us at support@macrogpt.app.
+                  Refund requests are subject to Apple's refund policy. We do not provide direct refunds. If you believe you are entitled to a refund, please contact Apple Support or reach out to us at support@macrogpt.online.
                 </p>
 
                 <h3>4.6 Price Changes</h3>
@@ -205,7 +205,7 @@ export default function Terms() {
                   We may terminate or suspend your access to the App immediately, without prior notice or liability, for any reason, including if you breach these Terms. Upon termination, your right to use the App will cease immediately.
                 </p>
                 <p>
-                  You may terminate your account at any time by deleting the App or contacting us at support@macrogpt.app.
+                  You may terminate your account at any time by deleting the App or contacting us at support@macrogpt.online.
                 </p>
               </div>
 
@@ -243,7 +243,7 @@ export default function Terms() {
                   If you have questions about these Terms, please contact us at:
                 </p>
                 <p>
-                  <strong>Email:</strong> support@macrogpt.app<br />
+                  <strong>Email:</strong> support@macrogpt.online<br />
                   <strong>Website:</strong> macrogpt.online
                 </p>
               </div>

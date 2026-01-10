@@ -21,7 +21,7 @@ export default function Footer() {
           <div className="footer-section">
             <h4>Support</h4>
             <Link href="/support">Contact Support</Link>
-            <a href="mailto:support@macrogpt.app">support@macrogpt.app</a>
+            <a href="mailto:support@macrogpt.online">support@macrogpt.online</a>
           </div>
         </div>
         <div className="footer-bottom">
