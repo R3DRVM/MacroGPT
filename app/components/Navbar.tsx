@@ -1,6 +1,8 @@
 'use client'
 
+import Image from 'next/image'
 import Link from 'next/link'
+import { Sparkles } from 'lucide-react'
 
 export default function Navbar() {
   return (
@@ -8,7 +10,16 @@ export default function Navbar() {
       <div className="container">
         <div className="nav-content">
           <Link href="/" className="logo">
-            <span className="logo-icon">M</span>
+            <div className="logo-icon">
+              <Image 
+                src="/assets/logo.svg" 
+                alt="MacroGPT Logo" 
+                width={40} 
+                height={40}
+                className="logo-image"
+              />
+              <Sparkles className="logo-sparkle" size={12} />
+            </div>
             <span className="logo-text">MacroGPT</span>
           </Link>
           <div className="nav-links">
@@ -48,20 +59,21 @@ export default function Navbar() {
         .logo-icon {
           width: 40px;
           height: 40px;
-          background: var(--primary-gradient);
-          border-radius: 10px;
           display: flex;
           align-items: center;
           justify-content: center;
-          font-weight: 700;
           position: relative;
         }
-        .logo-icon::after {
-          content: '✨';
+        .logo-image {
+          width: 40px;
+          height: 40px;
+        }
+        .logo-sparkle {
           position: absolute;
           top: -4px;
           right: -4px;
-          font-size: 12px;
+          color: white;
+          filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.5));
         }
         .nav-links {
           display: flex;

@@ -1,7 +1,9 @@
 'use client'
 
+import Image from 'next/image'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import { Camera, Zap, Target, Bot, BarChart3, UtensilsCrossed, Sparkles } from 'lucide-react'
 
 export default function Home() {
   return (
@@ -13,8 +15,14 @@ export default function Home() {
           <div className="container">
             <div className="hero-content">
               <div className="hero-icon">
-                <span className="icon-m">M</span>
-                <span className="icon-star">✨</span>
+                <Image 
+                  src="/assets/logo.svg" 
+                  alt="MacroGPT Logo" 
+                  width={120} 
+                  height={120}
+                  className="logo-image"
+                />
+                <Sparkles className="icon-star" size={24} />
               </div>
               <h1 className="hero-title">MacroGPT</h1>
               <p className="hero-subtitle">AI-Powered Macro Tracking</p>
@@ -58,21 +66,21 @@ export default function Home() {
               width: 120px;
               height: 120px;
               margin: 0 auto 32px;
-              background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-              border-radius: 24px;
               display: flex;
               align-items: center;
               justify-content: center;
               position: relative;
-              font-size: 4rem;
-              font-weight: 700;
-              color: white;
+            }
+            .logo-image {
+              width: 120px;
+              height: 120px;
             }
             .icon-star {
               position: absolute;
               top: -8px;
               right: -8px;
-              font-size: 24px;
+              color: white;
+              filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.5));
             }
             .hero-title {
               font-size: 4rem;
@@ -114,8 +122,120 @@ export default function Home() {
               .hero-icon {
                 width: 100px;
                 height: 100px;
-                font-size: 3rem;
               }
+              .logo-image {
+                width: 100px;
+                height: 100px;
+              }
+              .premium-image {
+                height: 200px;
+              }
+              .image-overlay {
+                opacity: 1;
+              }
+              .testimonial-banner {
+                height: 250px;
+              }
+            }
+          `}</style>
+        </section>
+
+        {/* Visual Showcase Section */}
+        <section className="section showcase-section">
+          <div className="container">
+            <h2 className="section-title">Transform Your Nutrition Journey</h2>
+            <p className="section-subtitle">
+              Join a community of fitness enthusiasts achieving their goals
+            </p>
+            <div className="premium-images">
+              <div className="premium-image-wrapper">
+                <Image 
+                  src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&q=80" 
+                  alt="Healthy food" 
+                  width={400} 
+                  height={300}
+                  className="premium-image"
+                />
+                <div className="image-overlay">
+                  <h3>Nutritious Meals</h3>
+                  <p>Track every bite with precision</p>
+                </div>
+              </div>
+              <div className="premium-image-wrapper">
+                <Image 
+                  src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&q=80" 
+                  alt="Fitness gym" 
+                  width={400} 
+                  height={300}
+                  className="premium-image"
+                />
+                <div className="image-overlay">
+                  <h3>Gym Performance</h3>
+                  <p>Fuel your workouts optimally</p>
+                </div>
+              </div>
+              <div className="premium-image-wrapper">
+                <Image 
+                  src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80" 
+                  alt="Workout" 
+                  width={400} 
+                  height={300}
+                  className="premium-image"
+                />
+                <div className="image-overlay">
+                  <h3>Active Lifestyle</h3>
+                  <p>Stay on track, anywhere</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style jsx>{`
+            .showcase-section {
+              background: var(--darker-bg);
+            }
+            .premium-images {
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+              gap: 24px;
+              margin: 48px 0;
+            }
+            .premium-image-wrapper {
+              border-radius: 16px;
+              overflow: hidden;
+              position: relative;
+              box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+              transition: transform 0.3s, box-shadow 0.3s;
+            }
+            .premium-image-wrapper:hover {
+              transform: translateY(-4px);
+              box-shadow: 0 15px 40px rgba(102, 126, 234, 0.3);
+            }
+            .premium-image-wrapper:hover .image-overlay {
+              opacity: 1;
+            }
+            .premium-image {
+              width: 100%;
+              height: 250px;
+              object-fit: cover;
+            }
+            .image-overlay {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+              padding: 24px;
+              opacity: 0;
+              transition: opacity 0.3s;
+            }
+            .image-overlay h3 {
+              color: white;
+              font-size: 1.5rem;
+              margin-bottom: 8px;
+            }
+            .image-overlay p {
+              color: rgba(255, 255, 255, 0.9);
+              font-size: 1rem;
             }
           `}</style>
         </section>
@@ -129,32 +249,44 @@ export default function Home() {
             </p>
             <div className="features-grid">
               <div className="feature-card">
-                <div className="feature-icon">📸</div>
+                <div className="feature-icon">
+                  <Camera size={48} strokeWidth={1.5} />
+                </div>
                 <h3>Snap & Describe</h3>
                 <p>Photo + chat for accurate macros. Just take a picture and let AI do the rest.</p>
               </div>
               <div className="feature-card">
-                <div className="feature-icon">⚡</div>
+                <div className="feature-icon">
+                  <Zap size={48} strokeWidth={1.5} />
+                </div>
                 <h3>Powered by GROK-4</h3>
                 <p>Advanced AI macro analysis powered by cutting-edge technology.</p>
               </div>
               <div className="feature-card">
-                <div className="feature-icon">🎯</div>
+                <div className="feature-icon">
+                  <Target size={48} strokeWidth={1.5} />
+                </div>
                 <h3>Hit Your Goals</h3>
                 <p>Personalized daily targets tailored to your fitness journey.</p>
               </div>
               <div className="feature-card">
-                <div className="feature-icon">🤖</div>
+                <div className="feature-icon">
+                  <Bot size={48} strokeWidth={1.5} />
+                </div>
                 <h3>AI Coach</h3>
                 <p>Get personalized meal plans, workout ideas, and nutrition guidance.</p>
               </div>
               <div className="feature-card">
-                <div className="feature-icon">📊</div>
+                <div className="feature-icon">
+                  <BarChart3 size={48} strokeWidth={1.5} />
+                </div>
                 <h3>Progress Tracking</h3>
                 <p>Monitor your macros, calories, and progress over time with detailed analytics.</p>
               </div>
               <div className="feature-card">
-                <div className="feature-icon">🍽️</div>
+                <div className="feature-icon">
+                  <UtensilsCrossed size={48} strokeWidth={1.5} />
+                </div>
                 <h3>Meal Planning</h3>
                 <p>Get AI-generated meal plans that fit your dietary preferences and goals.</p>
               </div>
@@ -180,8 +312,11 @@ export default function Home() {
               box-shadow: 0 20px 40px rgba(102, 126, 234, 0.2);
             }
             .feature-icon {
-              font-size: 3rem;
               margin-bottom: 16px;
+              color: var(--accent-purple);
+              display: flex;
+              align-items: center;
+              justify-content: center;
             }
             .feature-card h3 {
               font-size: 1.5rem;
@@ -337,6 +472,15 @@ export default function Home() {
             <p className="section-subtitle">
               Join thousands of users achieving their nutrition goals
             </p>
+            <div className="testimonial-hero-image">
+              <Image 
+                src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1200&q=80" 
+                alt="Fitness influencer" 
+                width={1200} 
+                height={400}
+                className="testimonial-banner"
+              />
+            </div>
             <div className="testimonials-grid">
               <div className="testimonial-card">
                 <div className="stars">★★★★★</div>
@@ -356,6 +500,17 @@ export default function Home() {
             </div>
           </div>
           <style jsx>{`
+            .testimonial-hero-image {
+              margin: 48px 0;
+              border-radius: 20px;
+              overflow: hidden;
+              box-shadow: 0 15px 50px rgba(0, 0, 0, 0.4);
+            }
+            .testimonial-banner {
+              width: 100%;
+              height: 400px;
+              object-fit: cover;
+            }
             .testimonials-grid {
               display: grid;
               grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

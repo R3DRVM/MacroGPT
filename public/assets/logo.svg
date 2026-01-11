@@ -1,0 +1,30 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Rounded square background -->
+  <rect width="120" height="120" rx="24" fill="white"/>
+  
+  <!-- Letter M with 3D/embossed effect -->
+  <g transform="translate(20, 20)">
+    <!-- M base/shadow -->
+    <path d="M10 60 L10 20 L30 20 L40 40 L50 20 L70 20 L70 60 L55 60 L55 35 L45 55 L35 55 L25 35 L25 60 Z" fill="#1a1a1a"/>
+    
+    <!-- M main body - dark charcoal -->
+    <path d="M10 60 L10 20 L30 20 L40 40 L50 20 L70 20 L70 60 L55 60 L55 35 L45 55 L35 55 L25 35 L25 60 Z" fill="#2d2d2d"/>
+    
+    <!-- M top highlight for 3D effect -->
+    <path d="M10 20 L30 20 L40 40 L50 20 L70 20" stroke="#4a4a4a" stroke-width="2.5" fill="none"/>
+    
+    <!-- M left leg highlight -->
+    <path d="M10 20 L10 60" stroke="#4a4a4a" stroke-width="2.5" fill="none"/>
+    
+    <!-- M right leg highlight -->
+    <path d="M70 20 L70 60" stroke="#4a4a4a" stroke-width="2.5" fill="none"/>
+    
+    <!-- M center valley shadow -->
+    <path d="M40 40 L40 55 L35 55" stroke="#1a1a1a" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- Sparkle/Star icon at top right of M -->
+  <g transform="translate(75, 15)">
+    <path d="M5 0 L6 3 L9 3 L6.5 5 L7.5 8 L5 6 L2.5 8 L3.5 5 L1 3 L4 3 Z" fill="white"/>
+  </g>
+</svg>
