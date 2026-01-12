@@ -149,12 +149,11 @@ export default function Home() {
             </p>
             <div className="premium-images">
               <div className="premium-image-wrapper">
-                <Image 
+                <img 
                   src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&q=80" 
                   alt="Healthy food" 
-                  width={400} 
-                  height={300}
                   className="premium-image"
+                  loading="lazy"
                 />
                 <div className="image-overlay">
                   <h3>Nutritious Meals</h3>
@@ -162,12 +161,11 @@ export default function Home() {
                 </div>
               </div>
               <div className="premium-image-wrapper">
-                <Image 
+                <img 
                   src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&q=80" 
                   alt="Fitness gym" 
-                  width={400} 
-                  height={300}
                   className="premium-image"
+                  loading="lazy"
                 />
                 <div className="image-overlay">
                   <h3>Gym Performance</h3>
@@ -175,12 +173,11 @@ export default function Home() {
                 </div>
               </div>
               <div className="premium-image-wrapper">
-                <Image 
+                <img 
                   src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80" 
                   alt="Workout" 
-                  width={400} 
-                  height={300}
                   className="premium-image"
+                  loading="lazy"
                 />
                 <div className="image-overlay">
                   <h3>Active Lifestyle</h3>
@@ -473,12 +470,11 @@ export default function Home() {
               Join thousands of users achieving their nutrition goals
             </p>
             <div className="testimonial-hero-image">
-              <Image 
+              <img 
                 src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1200&q=80" 
                 alt="Fitness influencer" 
-                width={1200} 
-                height={400}
                 className="testimonial-banner"
+                loading="lazy"
               />
             </div>
             <div className="testimonials-grid">
